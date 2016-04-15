@@ -108,7 +108,7 @@ $(document).ready(function () {
     $("#our-team").owlCarousel({
         autoPlay: 5000,
         slideSpeed: 500,
-        items: 4,
+        items: 2,
         itemsDesktop: [1199, 4],
         itemsDesktopSmall: [979, 3],
         itemsTablet: [768, 2],
@@ -184,10 +184,10 @@ $(document).ready(function () {
         });
     }
 
-    $(".clients").owlCarousel({
+    $(".clients-3").owlCarousel({
         autoPlay: 8000,
         slideSpeed: 500,
-        items: 5,
+        items: 3,
         itemsDesktop: [1199, 5],
         itemsDesktopSmall: [979, 4],
         itemsTablet: [768, 3],
@@ -200,9 +200,24 @@ $(document).ready(function () {
         "<i class='fa fa-angle-right'></i>"
         ],*/
         //Call beforeInit callback, elem parameter point to $("#our-team")
-        beforeInit: function (elem) {
-            random(elem);
-        }
+
+    });
+    $(".clients-2").owlCarousel({
+        autoPlay: 8000,
+        slideSpeed: 500,
+        items: 2,
+        itemsDesktop: [1199, 5],
+        itemsDesktopSmall: [979, 4],
+        itemsTablet: [768, 3],
+        itemsMobile: [479, 2],
+        autoHeight: true,
+		pagination: false,
+		/*navigation: true,
+        navigationText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>"
+        ],*/
+        //Call beforeInit callback, elem parameter point to $("#our-team")
 
     });
 

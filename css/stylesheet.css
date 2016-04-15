@@ -197,6 +197,16 @@ section {
 }
 /* ------------------------------------------------------------------------------------------ About Section Starts */
 
+#about .line {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #373737;
+	margin-bottom: 60px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #workflow .heading {
 	font-size: 28px;
 	text-transform: uppercase;
@@ -299,6 +309,7 @@ section {
 
 #team {
 	background: url(../img/textures/zwartevilt.png);
+    /*background-color: rgb(241,228,211);*/
 }
 #team .line {
 	border-bottom-width: 3px;
@@ -609,7 +620,7 @@ section#portfolio {
 	margin-left: 0px;
 }
 #container-thumbs .items {
-	width: 19.99%;
+	width: 24.49%;
 }
 #container-thumbs .items img {
 	width: 100%;
@@ -1583,6 +1594,15 @@ section#clients {
 }
 .clients .items {
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#clients .line {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	margin-bottom: 50px;
+	width: 100px;
 	margin-left: auto;
 	margin-right: auto;
 }
