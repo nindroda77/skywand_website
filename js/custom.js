@@ -105,10 +105,12 @@ $(document).ready(function () {
         });
     }*/
 
+   /*
     $("#our-team").owlCarousel({
+        center: true,
         autoPlay: 5000,
         slideSpeed: 500,
-        items: 2,
+        items: 4,
         itemsDesktop: [1199, 4],
         itemsDesktopSmall: [979, 3],
         itemsTablet: [768, 2],
@@ -120,12 +122,8 @@ $(document).ready(function () {
         "<i class='fa fa-angle-left'></i>",
         "<i class='fa fa-angle-right'></i>"
         ],
-        //Call beforeInit callback, elem parameter point to $("#our-team")
-       /* beforeInit: function (elem) {
-            random(elem);
-        }*/
 
-    });
+    });*/
 
 });
 
