@@ -326,7 +326,7 @@ $(window).load(function(){
                     return $(this).ekkoLightbox({
                         onShown: function() {
                             if (window.console) {
-                                return console.log('Checking our the events huh?');
+                                //return console.log('Checking our the events huh?');
                             }
                         }
                     });
@@ -587,6 +587,7 @@ $(window).load(function(){
 
 /************************************************************************************ PORTFOLIO DETAIL STARTS */
 
+/*
 
 
     $('.items').click(function (event) {
@@ -624,9 +625,9 @@ $(window).load(function(){
                 }, 1000);
             });
         });
-
     });
 
+*/
 
 
 
