@@ -210,6 +210,10 @@ section {
 	margin-right: auto;
 }
 
+#about .question-header {
+    font-weight: bold;
+}
+
 #workflow {
     background-color: rgb(254, 153, 41);
 }
@@ -560,6 +564,17 @@ section {
 #features .description {
 	margin-top: 6px;
 	margin-bottom: 30px;
+}
+#features .heading2 a{
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 40px;
+	color: #000;
+    text-decoration: none;
+}
+#features .heading2 a:hover{
+	color: #000;
+    text-decoration: none;
 }
 /* ------------------------------------------------------------------------------------------ Portfolio Section Starts */
 section#portfolio {
@@ -1586,8 +1601,12 @@ ul.media-list li a:hover {
 }
 /* ------------------------------------------------------------------------------------------ Clients Section Starts */
 section#clients {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+#clients .clients-box {
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 #clients {
 	background-image: url(../img/textures/light-grey-noise.gif);
