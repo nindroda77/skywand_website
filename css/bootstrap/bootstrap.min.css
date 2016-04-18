@@ -4329,7 +4329,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 	filter: alpha(opacity=20)
 }
 .close:hover, .close:focus {
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
 	opacity: .5;

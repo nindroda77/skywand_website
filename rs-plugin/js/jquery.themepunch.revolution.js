@@ -4218,7 +4218,7 @@
 
 																try{ isrc = isrc.replace('api=0','api=1'); } catch(e) {}
 
-																isrc=isrc+"&api=1";
+																isrc=isrc;
 
 																ifr.attr('src',isrc);
 																var player = nextcaption.find('iframe')[0];

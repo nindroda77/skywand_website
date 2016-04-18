@@ -85,6 +85,12 @@ section#slider {
 	-ms-animation: BackgroundAnimation 500s linear infinite;
 	height: 100%;
 }
+
+.title-play-icon {
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 8px;
+}
 /* Background Animation */
 
 @-webkit-keyframes BackgroundAnimation {
@@ -1964,3 +1970,8 @@ section#footer {
 .logo-row img {
     padding: 0 20px;
 }
+
+.modal-title {
+    color: white;
+}
+

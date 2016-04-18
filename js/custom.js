@@ -2,6 +2,83 @@
 /* CUSTOM JAVASCRIPT FILE */
 
 /************************************************************************************ ABOUT US CAROUSEL STARTS */
+				function updateHTML5Size(pc,container) {
+						var windowW = container.width();
+						var windowH = container.height();
+						var mediaAspect = pc.data('aspectratio');
+
+
+						var windowAspect = windowW/windowH;
+
+						pc.css({position:"absolute"});
+                        console.log("resize to " + windowAspect);
+						var video = pc.find('video');
+
+						if (windowAspect < mediaAspect) {
+							// taller
+								pc
+									.width(windowH*mediaAspect)
+									.height(windowH);
+								pc
+									.css('top',0)
+									.css('left',-(windowH*mediaAspect-windowW)/2)
+									.css('height',windowH);
+
+							/*	video
+									.width(windowH*mediaAspect)
+									.height(windowH);
+								video
+									.css('top',0)
+									.css('left',-(windowH*mediaAspect-windowW)/2)
+									.css('height',windowH);			*/
+
+
+						} else {
+							// wider
+								pc
+									.width(windowW)
+									.height(windowW/mediaAspect);
+								pc
+									.css('top',-(windowW/mediaAspect-windowH)/2)
+									.css('left',0)
+									.css('height',windowW/mediaAspect);
+
+							/*	video
+									.width(windowW)
+									.height(windowW/mediaAspect);
+								video
+									.css('top',-(windowW/mediaAspect-windowH)/2)
+									.css('left',0)
+									.css('height',windowW/mediaAspect);*/
+
+						}
+
+
+					}
+
+$(document).ready(function() {
+    //updateHTML5Size($('#cover_video'), $(window));
+    
+    var wWidth = $(window).width();
+    var wHeight = $(window).height();
+
+    var aspect = 16/9;
+    var targetHeight = wWidth / aspect;
+    var targetWidth = wHeight * aspect;
+
+    var target = $('#autocover_vimeo');
+    if ( targetWidth > wWidth ) {
+        // match height
+        target.css("height", wHeight)
+        .css("width", targetWidth);
+    } else {
+        target.css("width", wWidth)
+        .css("height", targetHeight);
+    }
+
+    //$('#autocover_vimeo').css("height", height+"px");
+   
+});
 
 $(document).ready(function() {
  
