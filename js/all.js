@@ -152,11 +152,11 @@
         $(".mobile-on .desktop-nav > ul").css("max-height", $(window).height() - $(".main-nav").height() - 20 + "px");
         
         // Mobile menu style toggle
-        if ($(window).width() <= 1024) {
+        if ($(window).width() <= 1200) {
             $(".main-nav").addClass("mobile-on");
         }
         else 
-            if ($(window).width() > 1024) {
+            if ($(window).width() > 1200) {
                 $(".main-nav").removeClass("mobile-on");
                 desktop_nav.show();
             }

@@ -3341,7 +3341,7 @@ a.logo:hover{
     margin: 0 0 0 -10px;
 }
 .works-grid.work-grid-gut .work-item{
-    padding: 0 0 10px 10px;
+    padding: 0 0 0px 0px;
 }
 
 .work-item > a{
